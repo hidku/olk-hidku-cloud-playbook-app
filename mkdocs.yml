@@ -28,6 +28,9 @@ theme:
       primary: indigo
       accent: red
 
+plugins:
+  - search
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -44,6 +47,16 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.tilde
 
 extra_templates:
   - footer.html
