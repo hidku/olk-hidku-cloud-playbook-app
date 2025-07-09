@@ -342,12 +342,13 @@ docs/
     index.md  # The documentation homepage.
     ...       # Other markdown pages, images and other files.
 </code></pre></div>
-<h1 id="mermaid-test">Mermaid Test</h1>
-<p>```mermaid
-graph TD
-  A[Start] --&gt; B{Decision}
-  B --&gt;|Yes| C[Do something]
-  B --&gt;|No| D[Do something else]</p>
+<h1 id="test-mermaid">Test Mermaid</h1>
+<pre class="mermaid"><code>graph LR
+  A[Start] --&gt; B{Error?};
+  B --&gt;|Yes| C[Hmm...];
+  C --&gt; D[Debug];
+  D --&gt; B;
+  B ----&gt;|No| E[Yay!];</code></pre>
 
 
 
