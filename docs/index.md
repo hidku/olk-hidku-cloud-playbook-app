@@ -16,10 +16,13 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
-# Mermaid Test
+# Test Mermaid
 
-```mermaid
-graph TD
-  A[Start] --> B{Decision}
-  B -->|Yes| C[Do something]
-  B -->|No| D[Do something else]
+``` mermaid
+graph LR
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Yay!];
+```
