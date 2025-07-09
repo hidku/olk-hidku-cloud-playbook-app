@@ -29,6 +29,8 @@ theme:
 
 plugins:
   - search
+  - neoteroi.mkdocsoad:
+      use_pymdownx: true
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -50,6 +52,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -59,4 +62,5 @@ markdown_extensions:
 extra_templates:
   - footer.html
 extra_css:
-  - 'stylesheets/extra.css'
+  - stylesheets/extra.css
+  - stylesheets/mkdocsoad.css
