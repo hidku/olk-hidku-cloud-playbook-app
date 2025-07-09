@@ -2,7 +2,7 @@ site_name: Hidku Cloud Playbook
 site_url:  https://cloud.hidku.com
 theme:
   name: material
-  custom_dir: overrides
+  custom_dir: docs/overrides
   features:
     - navigation.tabs
     - navigation.sections
@@ -57,8 +57,3 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.tilde
-
-extra_templates:
-  - footer.html
-extra_css:
-  - 'stylesheets/extra.css'
