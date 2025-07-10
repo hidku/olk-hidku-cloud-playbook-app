@@ -17,7 +17,16 @@
 <link href="stylesheets/css-v1.1.2.css" rel="stylesheet"/>
 <link href="css/drawio-darkmode.css" rel="stylesheet"/>
 <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+ <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-green" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -183,7 +192,7 @@
 <li><code>mkdocs -h</code> - Print help message and exit.</li>
 </ul>
 <h2 id="project-layout">Project layout</h2>
-<div class="highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
+<div class="language-text highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
 docs/
     index.md  # The documentation homepage.
     ...       # Other markdown pages, images and other files.
@@ -220,24 +229,24 @@ Most likely, it is not desirable to edit this file by hand!
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">application/json</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">[</span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="p">{</span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
-<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alice@example.com"</span>
-<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="p">}</span>
-<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="p">]</span>
-</code></pre></div>
+<p><div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">[</span>
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
+</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alice@example.com"</span>
+</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-7"><a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="p">]</span>
+</span></code></pre></div>
 <span class="small-note">⚠️</span> <em class="small-note warning">This example has been generated automatically from the schema and it is not accurate. Refer to the schema for more information.</em></p>
 <details class="hint">
 <summary>Schema of the response body</summary>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">{</span>
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span>
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="nt">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">        </span><span class="nt">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/User"</span>
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="p">}</span>
-<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="p">}</span>
-</code></pre></div>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="nt">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">        </span><span class="nt">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/User"</span>
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-6"><a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="p">}</span>
+</span></code></pre></div>
 </details>
 </div>
 </div>
@@ -274,33 +283,33 @@ Most likely, it is not desirable to edit this file by hand!
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">application/json</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">{</span>
-<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
-<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">    </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alice@example.com"</span>
-<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="p">}</span>
-</code></pre></div>
+<p><div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">{</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
+</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">    </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alice@example.com"</span>
+</span><span id="__span-2-5"><a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="p">}</span>
+</span></code></pre></div>
 <span class="small-note">⚠️</span> <em class="small-note warning">This example has been generated automatically from the schema and it is not accurate. Refer to the schema for more information.</em></p>
 <details class="hint">
 <summary>Schema of the response body</summary>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">{</span>
-<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
-<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="p">,</span>
-<a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">            </span><span class="nt">"example"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
-<a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">        </span><span class="p">},</span>
-<a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a href="#__codelineno-3-10" id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">            </span><span class="nt">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alice"</span>
-<a href="#__codelineno-3-11" id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">        </span><span class="p">},</span>
-<a href="#__codelineno-3-12" id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-3-13" id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a href="#__codelineno-3-14" id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">            </span><span class="nt">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alice@example.com"</span>
-<a href="#__codelineno-3-15" id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">        </span><span class="p">}</span>
-<a href="#__codelineno-3-16" id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="w">    </span><span class="p">}</span>
-<a href="#__codelineno-3-17" id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="p">}</span>
-</code></pre></div>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">{</span>
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
+</span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-5"><a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="p">,</span>
+</span><span id="__span-3-6"><a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">            </span><span class="nt">"example"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+</span><span id="__span-3-7"><a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-3-8"><a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-9"><a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+</span><span id="__span-3-10"><a href="#__codelineno-3-10" id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">            </span><span class="nt">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alice"</span>
+</span><span id="__span-3-11"><a href="#__codelineno-3-11" id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-3-12"><a href="#__codelineno-3-12" id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-13"><a href="#__codelineno-3-13" id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+</span><span id="__span-3-14"><a href="#__codelineno-3-14" id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">            </span><span class="nt">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alice@example.com"</span>
+</span><span id="__span-3-15"><a href="#__codelineno-3-15" id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-3-16"><a href="#__codelineno-3-16" id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-17"><a href="#__codelineno-3-17" id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="p">}</span>
+</span></code></pre></div>
 </details>
 </div>
 </div>
@@ -338,7 +347,7 @@ Most likely, it is not desirable to edit this file by hand!
 <div class="nt-card">
 <div class="nt-card-wrap">
 <div>
-<div class="nt-card-image tags"><img alt="Zeus" src="./img/icons/001-zeus.png"/></div>
+<div class="nt-card-image tags"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="./img/icons/001-zeus.png"><img alt="Zeus" src="./img/icons/001-zeus.png"/></a></div>
 <div class="nt-card-content">
 <p class="nt-card-title">Zeus</p>
 <p class="nt-card-text">Lorem ipsum dolor sit amet.</p>
@@ -349,7 +358,7 @@ Most likely, it is not desirable to edit this file by hand!
 <div class="nt-card">
 <div class="nt-card-wrap">
 <div>
-<div class="nt-card-image tags"><img alt="Athena" src="./img/icons/003-athena.png"/></div>
+<div class="nt-card-image tags"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="./img/icons/003-athena.png"><img alt="Athena" src="./img/icons/003-athena.png"/></a></div>
 <div class="nt-card-content">
 <p class="nt-card-title">Athena</p>
 <p class="nt-card-text">Lorem ipsum dolor sit amet.</p>
@@ -360,7 +369,7 @@ Most likely, it is not desirable to edit this file by hand!
 <div class="nt-card">
 <div class="nt-card-wrap">
 <div>
-<div class="nt-card-image tags"><img alt="Poseidon" src="./img/icons/007-poseidon.png"/></div>
+<div class="nt-card-image tags"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="./img/icons/007-poseidon.png"><img alt="Poseidon" src="./img/icons/007-poseidon.png"/></a></div>
 <div class="nt-card-content">
 <p class="nt-card-title">Poseidon</p>
 <p class="nt-card-text">Lorem ipsum dolor sit amet.</p>
@@ -371,7 +380,7 @@ Most likely, it is not desirable to edit this file by hand!
 <div class="nt-card">
 <div class="nt-card-wrap">
 <div>
-<div class="nt-card-image tags"><img alt="Artemis" src="./img/icons/021-artemis.png"/></div>
+<div class="nt-card-image tags"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="./img/icons/021-artemis.png"><img alt="Artemis" src="./img/icons/021-artemis.png"/></a></div>
 <div class="nt-card-content">
 <p class="nt-card-title">Artemis</p>
 <p class="nt-card-text">Lorem ipsum dolor sit amet.</p>
@@ -382,7 +391,7 @@ Most likely, it is not desirable to edit this file by hand!
 <div class="nt-card">
 <div class="nt-card-wrap">
 <div>
-<div class="nt-card-image tags"><img alt="Ares" src="./img/icons/006-ares.png"/></div>
+<div class="nt-card-image tags"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="./img/icons/006-ares.png"><img alt="Ares" src="./img/icons/006-ares.png"/></a></div>
 <div class="nt-card-content">
 <p class="nt-card-title">Ares</p>
 <p class="nt-card-text">Lorem ipsum dolor sit amet.</p>
@@ -393,7 +402,7 @@ Most likely, it is not desirable to edit this file by hand!
 <div class="nt-card">
 <div class="nt-card-wrap">
 <div>
-<div class="nt-card-image tags"><img alt="Nike" src="./img/icons/027-nike.png"/></div>
+<div class="nt-card-image tags"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="./img/icons/027-nike.png"><img alt="Nike" src="./img/icons/027-nike.png"/></a></div>
 <div class="nt-card-content">
 <p class="nt-card-title">Nike</p>
 <p class="nt-card-text">Lorem ipsum dolor sit amet.</p>
@@ -430,7 +439,7 @@ Most likely, it is not desirable to edit this file by hand!
 <div class="nt-timeline-after"></div>
 </div>
 <h1 id="gantt-test">Gantt test</h1>
-<div class="nt-plan-root" id="nt-plan-bebad248-0517-4917-89b7-dd0649e4ce91">
+<div class="nt-plan-root" id="nt-plan-b0e9bfc7-d65f-483c-bee0-9d311002288e">
 <div class="nt-plan">
 <div class="nt-plan-inner">
 <div class="nt-plan-periods">
@@ -565,7 +574,7 @@ Most likely, it is not desirable to edit this file by hand!
 </tr>
 </table>
 </div>
-<p><div class="mxgraph" data-mxgraph='{"toolbar": "zoom", "tooltips": "1", "border": 15, "resize": "1", "edit": "_blank", "xml": "&lt;mxfile host=\"Electron\" agent=\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36\" version=\"27.0.9\"&gt;\n  &lt;diagram name=\"Page-1\" id=\"yJ1K71cI2XBVtuIyxPF1\"&gt;\n    &lt;mxGraphModel dx=\"1212\" dy=\"1134\" grid=\"1\" gridSize=\"10\" guides=\"1\" tooltips=\"1\" connect=\"1\" arrows=\"1\" fold=\"1\" page=\"1\" pageScale=\"1\" pageWidth=\"850\" pageHeight=\"1100\" math=\"0\" shadow=\"0\"&gt;\n      &lt;root&gt;\n        &lt;mxCell id=\"0\"/&gt;\n        &lt;mxCell id=\"1\" parent=\"0\"/&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-3\" value=\"v\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" edge=\"1\" parent=\"1\" source=\"aczhfo-M_OytWeX1VCap-1\" target=\"aczhfo-M_OytWeX1VCap-2\"&gt;\n          &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-1\" value=\"Object\" style=\"html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"80\" y=\"165\" width=\"110\" height=\"50\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-2\" value=\"&amp;lt;h1 style=&amp;quot;margin-top: 0px;&amp;quot;&amp;gt;Heading&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&amp;lt;/p&amp;gt;\" style=\"text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"300\" y=\"130\" width=\"180\" height=\"120\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-5\" value=\"v\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" edge=\"1\" parent=\"1\" source=\"aczhfo-M_OytWeX1VCap-6\" target=\"aczhfo-M_OytWeX1VCap-7\"&gt;\n          &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-6\" value=\"Object\" style=\"html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"70\" y=\"325\" width=\"110\" height=\"50\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-7\" value=\"&amp;lt;h1 style=&amp;quot;margin-top: 0px;&amp;quot;&amp;gt;Heading&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&amp;lt;/p&amp;gt;\" style=\"text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"290\" y=\"290\" width=\"180\" height=\"120\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-8\" value=\"v\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" edge=\"1\" parent=\"1\" source=\"aczhfo-M_OytWeX1VCap-9\" target=\"aczhfo-M_OytWeX1VCap-10\"&gt;\n          &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-9\" value=\"Object\" style=\"html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"70\" y=\"495\" width=\"110\" height=\"50\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-10\" value=\"&amp;lt;h1 style=&amp;quot;margin-top: 0px;&amp;quot;&amp;gt;Heading&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&amp;lt;/p&amp;gt;\" style=\"text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"290\" y=\"460\" width=\"180\" height=\"120\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n      &lt;/root&gt;\n    &lt;/mxGraphModel&gt;\n  &lt;/diagram&gt;\n&lt;/mxfile&gt;"}' style="max-width:100%;border:1px solid transparent;"></div></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="object.drawio"><div class="mxgraph" data-mxgraph='{"toolbar": "zoom", "tooltips": "1", "border": 15, "resize": "1", "edit": "_blank", "xml": "&lt;mxfile host=\"Electron\" agent=\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36\" version=\"27.0.9\"&gt;\n  &lt;diagram name=\"Page-1\" id=\"yJ1K71cI2XBVtuIyxPF1\"&gt;\n    &lt;mxGraphModel dx=\"1212\" dy=\"1134\" grid=\"1\" gridSize=\"10\" guides=\"1\" tooltips=\"1\" connect=\"1\" arrows=\"1\" fold=\"1\" page=\"1\" pageScale=\"1\" pageWidth=\"850\" pageHeight=\"1100\" math=\"0\" shadow=\"0\"&gt;\n      &lt;root&gt;\n        &lt;mxCell id=\"0\"/&gt;\n        &lt;mxCell id=\"1\" parent=\"0\"/&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-3\" value=\"v\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" edge=\"1\" parent=\"1\" source=\"aczhfo-M_OytWeX1VCap-1\" target=\"aczhfo-M_OytWeX1VCap-2\"&gt;\n          &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-1\" value=\"Object\" style=\"html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"80\" y=\"165\" width=\"110\" height=\"50\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-2\" value=\"&amp;lt;h1 style=&amp;quot;margin-top: 0px;&amp;quot;&amp;gt;Heading&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&amp;lt;/p&amp;gt;\" style=\"text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"300\" y=\"130\" width=\"180\" height=\"120\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-5\" value=\"v\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" edge=\"1\" parent=\"1\" source=\"aczhfo-M_OytWeX1VCap-6\" target=\"aczhfo-M_OytWeX1VCap-7\"&gt;\n          &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-6\" value=\"Object\" style=\"html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"70\" y=\"325\" width=\"110\" height=\"50\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-7\" value=\"&amp;lt;h1 style=&amp;quot;margin-top: 0px;&amp;quot;&amp;gt;Heading&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&amp;lt;/p&amp;gt;\" style=\"text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"290\" y=\"290\" width=\"180\" height=\"120\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-8\" value=\"v\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" edge=\"1\" parent=\"1\" source=\"aczhfo-M_OytWeX1VCap-9\" target=\"aczhfo-M_OytWeX1VCap-10\"&gt;\n          &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-9\" value=\"Object\" style=\"html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"70\" y=\"495\" width=\"110\" height=\"50\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\"aczhfo-M_OytWeX1VCap-10\" value=\"&amp;lt;h1 style=&amp;quot;margin-top: 0px;&amp;quot;&amp;gt;Heading&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&amp;lt;/p&amp;gt;\" style=\"text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;\n          &lt;mxGeometry x=\"290\" y=\"460\" width=\"180\" height=\"120\" as=\"geometry\"/&gt;\n        &lt;/mxCell&gt;\n      &lt;/root&gt;\n    &lt;/mxGraphModel&gt;\n  &lt;/diagram&gt;\n&lt;/mxfile&gt;"}' style="max-width:100%;border:1px solid transparent;"></div></a></p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -606,5 +615,7 @@ Most likely, it is not desirable to edit this file by hand!
 <script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 <script src="javascripts/drawio-reload.js"></script>
 <script src="js/drawio-darkmode.js"></script>
-<script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script></body>
+<script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
