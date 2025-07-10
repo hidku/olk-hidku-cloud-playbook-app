@@ -1,5 +1,3 @@
-::timeline::
-
 - content: First implementation.
   icon: ':material-rocket-launch-outline:'
   sub_title: 2022-Q1
@@ -16,5 +14,3 @@
   icon: ':material-bug:'
   sub_title: 2022-Q4
   title: Bugs!
-
-::/timeline::

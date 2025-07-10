@@ -1,5 +1,3 @@
-::gantt::
-
 - title: Definition Phase
   activities:
   - title: Creative Brief
@@ -39,5 +37,3 @@
   - title: Final delivery
     start: 2022-05-11
     end: 2022-05-12
-
-::/gantt::
