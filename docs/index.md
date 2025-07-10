@@ -31,3 +31,38 @@ graph LR
 
 ## User Endpoints
 [OAD(./docs/openapi.yaml)]
+
+
+# Cards test
+
+[cards(./card.yaml)]
+
+# Timeline test
+
+[timeline(./timeline.yaml)]
+
+# Grantt test
+
+[gantt(./grantt.yaml)]
+
+# table test
+
+::spantable::
+
+| Country      | Address                                                  |
+| ------------ | -------------------------------------------------------- |
+| France @span | 8 Rue St Ferréol - 92190 City: Meudon (Île-de-France)    |
+|              | 50 boulevard Amiral Courbet - 94310 Orly (Île-de-France) |
+|              | ...                                                      |
+|              | ...                                                      |
+| Italy @span  | Str. S. Maurizio, 12, 10072 Caselle torinese TO          |
+|              | S.S. Torino-Asti - 10026 Santena (TO)                    |
+|              | ...                                                      |
+| Poland @span | al. Jana Pawła II 22, 00-133 Warszawa                    |
+|              | plac Trzech Krzyży 4/6, 00-535 Warszawa                  |
+|              | ...                                                      |
+|              | ...                                                      |
+
+::end-spantable::
+
+

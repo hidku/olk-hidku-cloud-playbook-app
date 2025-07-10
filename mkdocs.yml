@@ -58,9 +58,13 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - neoteroi.cards
+  - neoteroi.timeline
+  - neoteroi.projects
+  - neoteroi.spantable
 
 extra_templates:
   - footer.html
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/mkdocsoad.css
+  - stylesheets/css-v1.1.2.css
