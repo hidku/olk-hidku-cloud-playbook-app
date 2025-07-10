@@ -67,3 +67,4 @@ graph LR
 ::end-spantable::
 
 
+![my-custom-page-name](object.drawio)

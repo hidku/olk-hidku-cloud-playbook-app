@@ -12,6 +12,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - navigation.instant
   language: en
   palette:
     - scheme: default
@@ -31,6 +32,13 @@ plugins:
   - search
   - neoteroi.mkdocsoad:
       use_pymdownx: true
+  - drawio:
+      viewer_js: "https://viewer.diagrams.net/js/viewer-static.min.js"
+      toolbar: true
+      tooltips: true
+      edit: true
+      border: 10
+      darkmode: true
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -68,3 +76,7 @@ extra_templates:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/css-v1.1.2.css
+
+extra_javascript:
+  - https://viewer.diagrams.net/js/viewer-static.min.js
+  - javascripts/drawio-reload.js
