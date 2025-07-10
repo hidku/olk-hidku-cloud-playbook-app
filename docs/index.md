@@ -35,18 +35,17 @@ graph LR
 
 # Cards test
 
-::: cards(./docs/card.yaml)
+[cards(./docs/card.yaml)]
 :::
 
 # Timeline test
 
-::: timeline(./docs/timeline.yaml)
+[timeline(./docs/timeline.yaml)]
 :::
 
 # Gantt test
 
-::: gantt(./docs/grantt.yaml)
-:::
+[gantt(./docs/grantt.yaml)]
 
 # table test
 
