@@ -1,5 +1,3 @@
-::cards::
-
 - title: Zeus
   content: Lorem ipsum dolor sit amet.
   image: ./img/icons/001-zeus.png
@@ -23,5 +21,3 @@
 - title: Nike
   content: Lorem ipsum dolor sit amet.
   image: ./img/icons/027-nike.png
-
-::/cards::
