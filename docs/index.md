@@ -36,12 +36,11 @@ graph LR
 # Cards test
 
 [cards(./docs/card.yaml)]
-:::
+
 
 # Timeline test
 
 [timeline(./docs/timeline.yaml)]
-:::
 
 # Gantt test
 
