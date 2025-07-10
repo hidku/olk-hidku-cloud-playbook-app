@@ -35,15 +35,15 @@ graph LR
 
 # Cards test
 
-[cards(./card.yaml)]
+[cards(./docs/card.yaml)]
 
 # Timeline test
 
-[timeline(./timeline.yaml)]
+[timeline(./docs/timeline.yaml)]
 
 # Grantt test
 
-[gantt(./grantt.yaml)]
+[gantt(./docs/grantt.yaml)]
 
 # table test
 
